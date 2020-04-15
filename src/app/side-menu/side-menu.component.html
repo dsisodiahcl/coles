@@ -1,0 +1,99 @@
+
+<aside>
+    <h1>WMS Main Menu</h1>
+    <ul class="remove-style-for-list">
+    <li><a href="#">Help</a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#">Servers not supported by us</a></li>
+    <li>Various Server Lists
+        <ul class="apply-style-for-list">
+            <li>
+                All Servers
+                
+                <ul class="apply-style-for-list">
+                    <li> <a routerLink="" (click)="goToPage('/allprod')">ALL</a></li>
+                    <li> <a href="#">ProductionServers</a></li>
+                    <li><a href="#">NonproductionServers</a></li>
+                    <li><a href="#">ApplicationServers</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="apply-style-for-list">
+                <li>
+                    NonprodServers
+                    <ul class="apply-style-for-list">
+                            <li> <a href="#">All</a></li>
+                            <li> <a href="#">Dbserver</a></li>
+                            <li><a href="#">Application server</a></li>
+                            <li><a href="#">Webserver</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="apply-style-for-list">
+                    <li>
+                        ProductionServers
+                        <ul class="apply-style-for-list">
+                                <li> <a href="#">All</a></li>
+                                <li> <a href="#">Dbserver</a></li>
+                                <li> <a href="#">Applicationserver</a></li>
+                                <li> <a href="#">Webserver</a></li>
+                        </ul>
+                        </li>
+                        </ul>
+
+          <li>
+
+   Nonproduserver
+
+<select id="cars">
+        <option value="WXR-FFIX">WXR-FFIX</option>
+        <option value="WXR-MCFG">WXR-MCFG</option>
+        <option value="WXR-CONV">WXR-CONV</option>
+        <option value="WXR-DEV">WXR-DEV</option>
+        <option value="WXR-PREIMP">WXR-PREIMP </option>
+        <option value="WXR-VEND">WXR-VEND</option>
+        <option value="WXR-TRM">WXR-TRM</option>
+        <option value="Eastern Creek NDC">Eastern Creek NDC</option>
+        <option value="WXR-INT">WXR-INT</option>
+        <option value="WXR-INT2">WXR-INT2</option>
+        <option value="WXR-CRT">WXR-CRT</option>
+</select> <input type="button" value="Search" onclick="search()">
+       </li>
+       <li>
+
+productionserver
+ 
+<select id="cars">
+            <option value="Truganina">Truganina </option>
+            <option value="Edinburgh">Edinburgh Parks</option>
+            <option value="Somerton">Somerton</option>
+            <option value="Laverton">Laverton</option>
+            <option value="Eastern Creek">Eastern Creek </option>
+            <option value="Parkinson">Parkinson</option>
+            <option value="Smeaton Grange">Smeaton Grange</option>
+            <option value="Eastern Creek NDC">Eastern Creek NDC</option>
+            <option value="Kewdale CDC">Kewdale CDC </option>
+            <option value="Goulburn RDC">Goulburn RDC</option>
+            <option value="Forestlake">Forestlake</option>
+            <option value="Launcest">Launceston</option>
+ </select> <input type="button" value="Search" onclick="search()">
+  </li>
+    <li>
+     Search For Server:
+    </li>
+    <li>
+      <input type="text" id="hostnameId" [(ngModel)]="page">
+    </li>
+    <li>
+        <form action="server_details.html">
+            <select id="cars">
+                    <option value="HostName">Host Name</option>
+                    <option value="ServerName">Server Name</option>
+                    <option value="Description">Description</option>
+                    <option value="OS">OS</option>
+            </select> <button (click)="sendPageName()">Search</button>
+        </form>
+    </li>
+    </ul>
+</aside>

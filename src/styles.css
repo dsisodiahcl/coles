@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main main '
+      'footer footer footer footer footer footer';
+    /* grid-gap: 10px; */
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
+  }
+
+
+  .html{
+    font-family: sans-serif;
+  }
+
+ .item-one{ 
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+ }
+
+ .side-menu-column {
+    background-color:#1E90FF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-area: menu;
+    
+  }
+  .main-content-column {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-area: main;
+   
+  }
+
+
+.header-column { 
+    grid-area: header; 
+    text-align: center;
+}
+
+.footer-column {
+     grid-area: footer; 
+    text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main '
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.header-img {
+    width: 100%;
+    height: 146px;
+  }
+  .footer-img {
+    width: 100%;
+    height: 146px;
+  }
+
+  .remove-style-for-list{
+    list-style-type: none;
+    text-align-last: start;
+  }
+  .apply-style-for-list{
+    list-style-type:disc;
+    
+  }
+
+  .row-wise-dispaly { 
+    display: grid; 
+    grid-template-rows: auto;
+    grid-row-gap: 0;
+} 
+
+.grid-item-heading{
+    justify-self: start;
+
+}
+.grid-item-content{
+    justify-self: start;
+    
+}
+.grid-item-heading-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: auto;
+}
+
+.box1 { 
+    grid-column-start: 2; 
+    grid-column-end: 13; 
+  }
+  
+  .box2 { 
+    grid-column-start: 1; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+  }
+
+  .row-wise-2col-dispaly { 
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);
+} 
+
+.grid-item-2col-content{
+  border-color: black;
+  padding: 6px;
+  border: 1px solid black;
+  text-align: start;
+  
+}
+
+.firstCol{
+  background-color: #2196F3;
+}
